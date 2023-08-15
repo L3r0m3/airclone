@@ -43,7 +43,7 @@ const Modal: React.FC<ModalProps> = ({
         setShowModal(false);
         setTimeout(() => {
             onClose();
-        }, 300);
+        },300);
     }, [disabled, onClose]);
 
     const handleSubmit = useCallback(() => {
@@ -140,10 +140,10 @@ const Modal: React.FC<ModalProps> = ({
                                 <button
                                     onClick={handleClose}
                                     className="
+                                        transition
                                         p-1
                                         border-0
                                         hover:opacity-70
-                                        transition
                                         absolute
                                         left-9
                                     "
