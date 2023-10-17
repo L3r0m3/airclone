@@ -34,7 +34,7 @@ const EmptyState: React.FC<EmptyState> = ({
             />
             <div className="w-48 mt-4">
                 {showReset && (
-                    <Button 
+                    <Button
                         outline
                         label="Remove all filters"
                         onClick={() => router.push('/')}

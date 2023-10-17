@@ -120,11 +120,10 @@ const Categories = () => {
             >
                 {categories.map((item) => (
                     <CategoryBox
-                    key={item.label}
-                    label={item.label}
-                    selected={category === item.label}
-                    // description={item.description}
-                    icon={item.icon}
+                        key={item.label}
+                        label={item.label}
+                        selected={category === item.label}
+                        icon={item.icon}
                     />
                 ))}
             </div>
