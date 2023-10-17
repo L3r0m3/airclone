@@ -11,7 +11,7 @@ import { differenceInDays } from 'date-fns';
 const Search = () => {
     const searchModal = useSearchModal();
     const params = useSearchParams();
-    const{ getByValue } = useCountries();
+    const { getByValue } = useCountries();
 
     const locationValue = params?.get('locationValue');
     const startDate = params?.get('startDate');
