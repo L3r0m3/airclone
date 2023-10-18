@@ -1,0 +1,10 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@now/node",
+        "config": { "maxLambdaSize": "50mb" },
+        "buildCommand": "npm install && npx prisma generate"
+      }
+    ]
+  }
