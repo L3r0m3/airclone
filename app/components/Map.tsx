@@ -21,7 +21,6 @@ interface MapProps {
     center?: number[]
 }
 
-
 const Map: React.FC<MapProps> = ({
     center
 }) => {
