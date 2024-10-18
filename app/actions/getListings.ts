@@ -26,7 +26,7 @@ export default async function getListings(params: IListingsParams) {
 
     let query: any = {};
 
-    if (userId) {
+    if (userId && typeof userId === "string" && userId.length === 24) {
       query.userId = userId;
     }
 
