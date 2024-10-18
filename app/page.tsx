@@ -38,11 +38,11 @@ const Home = async ({ searchParams }: HomeProps) => {
             gap-8
           "
         >
-          {listings?.map((listing) => {
+          {listings.map((listing) => {
             return (
               <ListingCard
                 currentUser={currentUser}
-                key={listing?.id}
+                key={listing.id}
                 data={listing}
               />
             );
