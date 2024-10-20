@@ -2,7 +2,7 @@
 
 import Container from "../Container";
 import Categories from "./Categories";
-// import Logo from "./Logo";
+import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
 import { SafeUser } from "@/app/types";
@@ -31,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
                             md:gap-0
                         "
           >
-            {/* <Logo /> */}
+            <Logo />
             <Search />
             <UserMenu currentUser={currentUser} />
           </div>
